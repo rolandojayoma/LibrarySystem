@@ -1,6 +1,6 @@
 ﻿namespace LibrarySystem
 {
-    partial class Form1
+    partial class Intro
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Intro));
             panel1 = new Panel();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
             pictureBox3 = new PictureBox();
+            btnAdmin = new Button();
+            btnLibraryStaff = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -45,11 +45,11 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(btnLibraryStaff);
+            panel1.Controls.Add(btnAdmin);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
             panel1.Location = new Point(130, 158);
             panel1.Name = "panel1";
             panel1.Size = new Size(550, 271);
@@ -60,9 +60,9 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(352, 83);
+            pictureBox2.Location = new Point(335, 83);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(117, 93);
+            pictureBox2.Size = new Size(134, 93);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
@@ -91,26 +91,6 @@
             label3.Text = "Jose Maria College Library";
             label3.UseWaitCursor = true;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(369, 190);
-            label2.Name = "label2";
-            label2.Size = new Size(89, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Library Staff";
-            label2.UseWaitCursor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(103, 190);
-            label1.Name = "label1";
-            label1.Size = new Size(53, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Admin";
-            label1.UseWaitCursor = true;
-            // 
             // pictureBox3
             // 
             pictureBox3.BackColor = Color.Transparent;
@@ -123,7 +103,25 @@
             pictureBox3.TabStop = false;
             pictureBox3.UseWaitCursor = true;
             // 
-            // Form1
+            // btnAdmin
+            // 
+            btnAdmin.Location = new Point(84, 190);
+            btnAdmin.Name = "btnAdmin";
+            btnAdmin.Size = new Size(94, 29);
+            btnAdmin.TabIndex = 5;
+            btnAdmin.Text = "Admin";
+            btnAdmin.UseVisualStyleBackColor = true;
+            // 
+            // btnLibraryStaff
+            // 
+            btnLibraryStaff.Location = new Point(335, 190);
+            btnLibraryStaff.Name = "btnLibraryStaff";
+            btnLibraryStaff.Size = new Size(134, 29);
+            btnLibraryStaff.TabIndex = 6;
+            btnLibraryStaff.Text = "Library Staff";
+            btnLibraryStaff.UseVisualStyleBackColor = true;
+            // 
+            // Intro
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -131,7 +129,7 @@
             ClientSize = new Size(800, 498);
             Controls.Add(pictureBox3);
             Controls.Add(panel1);
-            Name = "Form1";
+            Name = "Intro";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -146,8 +144,8 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Label label3;
-        private Label label2;
-        private Label label1;
         private PictureBox pictureBox3;
+        private Button btnLibraryStaff;
+        private Button btnAdmin;
     }
 }

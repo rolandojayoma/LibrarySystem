@@ -1,8 +1,8 @@
 namespace LibrarySystem
 {
-    public partial class Form1 : Form
+    public partial class Intro : Form
     {
-        public Form1()
+        public Intro()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibrarySystem
 {
-    public partial class StudentTimeinTimeout : Form
+    public partial class ManageReport: Form
     {
-        public StudentTimeinTimeout()
+        public ManageReport()
         {
             InitializeComponent();
         }

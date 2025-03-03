@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LibrarySystem
 {
-    public partial class StudentTimeinTimeout : Form
+    public partial class UserManagement : Form
     {
-        public StudentTimeinTimeout()
+        public UserManagement()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
